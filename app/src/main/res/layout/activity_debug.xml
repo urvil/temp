@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".alluiactivity.debug">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/tv_systemflag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bt_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"></LinearLayout>
+</android.widget.LinearLayout>

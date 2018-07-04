@@ -1,0 +1,73 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    card_view:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beacon Card"
+            android:textAlignment="center"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/_25sdp"
+            app:customFont="fonts/gilroy_bold.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Rssi"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_22sdp"
+                    app:customFont="fonts/gilroy_bold.ttf" />
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:id="@+id/tv_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_22sdp"
+                    app:customFont="fonts/gilroy_bold.ttf" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/background"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/card" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+

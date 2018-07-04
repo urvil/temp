@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oil"
+    android:gravity="center"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Select Item"
+                android:textColor="@color/primary_darker"
+                android:textSize="@dimen/_25sdp"
+                app:customFont="fonts/gilroy_bold.ttf" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_weight="0.3"
+            android:background="@drawable/custom_background"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/img_lock"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/doorsensor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/blue_light" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Door Sensor"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_18sdp"
+                    app:customFont="fonts/gilroy_semibold.ttf" />
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Smart door lock"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_14sdp"
+                    app:customFont="fonts/gilroy_regular.ttf" />
+
+
+                <ImageView
+                    android:id="@+id/imgDoor"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_background"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/doorsensor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/blue_light" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Window Sensor"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_18sdp"
+                    app:customFont="fonts/gilroy_semibold.ttf" />
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Smart door lock"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_14sdp"
+                    app:customFont="fonts/gilroy_regular.ttf" />
+
+
+                <ImageView
+                    android:id="@+id/imgWindow"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_background"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/pirsensor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/blue_light" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:id="@+id/tv_title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Pir Sensor"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_18sdp"
+                    app:customFont="fonts/gilroy_semibold.ttf" />
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:id="@+id/tv_title_4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/tv_title_3"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Smart door bell"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_14sdp"
+                    app:customFont="fonts/gilroy_regular.ttf" />
+
+
+                <ImageView
+                    android:id="@+id/img_Pir"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="0.3"
+            android:background="@drawable/custom_background"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/remote" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/blue_light" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Panic Sensor"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_18sdp"
+                    app:customFont="fonts/gilroy_semibold.ttf" />
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Smart door bell"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_14sdp"
+                    app:customFont="fonts/gilroy_regular.ttf" />
+
+
+                <ImageView
+                    android:id="@+id/img_Panic"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_background"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/soil" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/blue_light" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Soil Sensor"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_18sdp"
+                    app:customFont="fonts/gilroy_semibold.ttf" />
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Smart door bell"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_14sdp"
+                    app:customFont="fonts/gilroy_regular.ttf" />
+
+
+                <ImageView
+                    android:id="@+id/img_Soil"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="0.3"
+            android:background="@drawable/custom_background"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/temphumi" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/blue_light" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Humidity / Temperature"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_18sdp"
+                    app:customFont="fonts/gilroy_semibold.ttf" />
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Smart door bell"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_14sdp"
+                    app:customFont="fonts/gilroy_regular.ttf" />
+
+
+                <ImageView
+                    android:id="@+id/img_Ht"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="0.3"
+            android:background="@drawable/custom_background"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/card" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/blue_light" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Card"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_18sdp"
+                    app:customFont="fonts/gilroy_semibold.ttf" />
+
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Smart door bell"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/_14sdp"
+                    app:customFont="fonts/gilroy_regular.ttf" />
+
+
+                <ImageView
+                    android:id="@+id/img_Card"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_next" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

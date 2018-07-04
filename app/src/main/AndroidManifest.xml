@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.reveautomation.revesmartsecuritykit_online">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".services.Multi_Dex"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:launchMode="singleInstance"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".alluiactivity.SplashPageActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".example1_scanning.DashboardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Dark1" />
+        <activity
+            android:name=".alluiactivity.LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+
+        <receiver android:name=".services.SMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.MqttMessageService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.TcpServerService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.UdpServerServices"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name=".services.RestartServiceReceiver">
+            <intent-filter>
+                <action android:name="YouWillNeverKillMe" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <activity android:name=".alluiactivity.ConfigureSensorActivity" />
+        <activity android:name=".alluiactivity.debug" />
+        <activity android:name=".alluiactivity.SelectProductActivity" />
+        <activity android:name=".example2_connection.ConnectionExampleActivity" />
+        <activity android:name=".example3_discovery.ServiceDiscoveryExampleActivity" />
+        <activity android:name=".example4_characteristic.advanced.AdvancedCharacteristicOperationExampleActivity" />
+        <activity android:name=".example4_characteristic.CharacteristicOperationExampleActivity" />
+        <activity android:name=".example5_rssi_periodic.RssiPeriodicExampleActivity" />
+        <activity android:name=".example7_long_write.LongWriteExampleActivity" />
+        <activity android:name=".alluiactivity.Settings" />
+        <activity android:name=".alluiactivity.GcHubSync"></activity>
+    </application>
+
+</manifest>

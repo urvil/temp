@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.reveautomation.revesmartsecuritykit_online.alluiactivity.Settings">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Remove Sensor"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue_light"
+                            android:textSize="@dimen/_25sdp"
+                            app:customFont="fonts/gilroy_bold.ttf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="1dp"
+                            android:paddingBottom="10dp"
+                            android:weightSum="2">
+
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.7"
+                                android:padding="25dp"
+                                android:prompt="@string/spinner_title" />
+
+                            <ImageButton
+                                android:id="@+id/imgdelete"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:background="@android:drawable/screen_background_light_transparent"
+                                android:padding="5dp"
+                                android:scaleType="centerInside"
+                                android:visibility="visible"
+                                app:srcCompat="@drawable/deletesign" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Switch Sensor"
+                            android:textAlignment="center"
+                            android:textColor="@color/blue_light"
+                            android:textSize="@dimen/_25sdp"
+                            app:customFont="fonts/gilroy_bold.ttf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="1dp"
+                            android:paddingBottom="10dp"
+                            android:weightSum="2">
+
+                            <Button
+                                android:id="@+id/bt_switch_pir"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="PIR STATUS" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</ScrollView>

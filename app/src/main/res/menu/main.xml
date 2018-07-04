@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_debug"
+        android:orderInCategory="100"
+        android:title="@string/action_debug"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sync"
+        android:orderInCategory="100"
+        android:title="@string/action_sync"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_gcsync"
+        android:orderInCategory="100"
+        android:title="@string/action_gcsync"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="10"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.reveautomation.revesmartsecuritykit_online.example1_scanning.DashboardActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/tv_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disconnected"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/pingcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Count" />
+
+    <Button
+        android:id="@+id/scan_toggle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_scan"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.reveautomation.revesmartsecuritykit_online.custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Security Control"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue_light"
+                    android:textSize="16sp"
+                    app:customFont="fonts/gilroy_bold.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="4">
+
+                    <ImageButton
+                        android:id="@+id/imgsystem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/diarm" />
+
+                    <ImageButton
+                        android:id="@+id/imgsos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_red_circle"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/sos" />
+
+                    <ImageButton
+                        android:id="@+id/imglog"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/log" />
+
+                    <ImageButton
+                        android:id="@+id/imgalertoff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_green_circle"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/alertoff" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scan_results"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
